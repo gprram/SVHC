@@ -116,7 +116,7 @@ menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 5vh;
+        padding: 1vh;
         backdrop-filter: blur(3px);
        box-shadow: inset 5px 5px 300px black; 
     }
