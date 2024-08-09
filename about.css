@@ -221,6 +221,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    background:white;
 }
 
 #sec3 h3{
@@ -316,7 +317,7 @@ main{
 }
 
 #sec2{
-    
+    background:white;
 }
 .sub-princ{
     min-height: 50vh;
