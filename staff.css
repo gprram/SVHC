@@ -1,0 +1,45 @@
+main{
+    position: relative;
+    top: 19vh;
+}
+#teacherssec{
+    min-height: 50vh;
+    border: 2px solid red;
+}
+#teacherssec h3,#teacherssec p{
+    text-align: center;
+    padding-top: 2vh;
+}
+#teacherssec .playschool{
+    display: flex;
+    justify-content: space-around;
+}
+#teacherssec .playschool a{
+    width: 20vw;
+}
+#teacherssec .highschool{
+    display: flex;
+    justify-content: space-around;
+
+}
+#teacherssec .highschool .onetofive{
+    display: flex;
+    flex-direction: column;
+}
+#teacherssec .highschool .fivetosix{
+    display: flex;
+    flex-direction: column;
+}
+#teacherssec a{
+    display: flex;
+    justify-content: center;
+    width: 40vw;
+    margin: 5px;
+}
+
+
+@media(max-width:425px){
+    #teacherssec .playschool a h6{
+        font-size: 12px;
+    }
+}
