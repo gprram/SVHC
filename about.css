@@ -73,37 +73,37 @@ menu{
         height: 100%;
     }
     .img-container3 .text-cont h2{
-        font-size: 10px;
+        font-size: 14px;
         letter-spacing: 0;
         padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h1{
-        font-size: 12px;
+        font-size: 16px;
         letter-spacing: 0;
         padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h5{
-        font-size: 4px;
+        font-size: 8px;
         letter-spacing: 0;
         padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h6{
-        font-size: 4px;
+        font-size: 8px;
         letter-spacing: 0;
         padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h4{
-        font-size: 6px;
+        font-size: 10px;
         letter-spacing: 0;
         padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont .btn{
-        font-size: 7px;
+        font-size: 12px;
         padding: 0;
         margin-top: 5vh;
         animation: none;
