@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI VIVEKANANDA HIGH SCHOOL</title>
+    <link rel="icon" href="images/school1.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        main{
+            position: relative;
+            top: 20vh;
+            background-color: rgb(255, 255, 255);            
+        }
+        .event-main-container{
+            gap: 15vw;
+            position: relative;
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 25px 40px;
+            width: 100vw;
+            height: 30vw;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15vh;
+            border-bottom: 2px solid black;
+        }
+        .event-img-container{
+            width: 50vw;
+            height: 25vw;
+            overflow: hidden;
+            border-radius: 3px;
+            box-shadow: 10px 25px 30px rgba(89, 89, 92, 0.3);
+        }
+        .event-main-container .event-content{
+            width: 50vw;
+
+        }
+        .event-header{
+            height: 27%;
+            overflow: hidden;
+            padding-left: 20px;
+            background-color: rgb(255, 233, 196);
+            margin-bottom: 12px;
+            display: block;
+        }
+        #one-top{
+            display: none;
+        }
+        .event-para{
+            height: 73%;
+            overflow: scroll;
+            
+        }
+        .wrapper{
+            width: 100%;
+            display: flex;
+            animation: slide 16s infinite;
+        }
+        .wrapper img{
+            width: 100%;
+            object-fit: cover;
+            transition: scale 0.3s linear;
+        }
+        .wrapper img:hover{
+            scale: 1.2;
+        }
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform:translateX(-200%)
+            }
+            80%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-300%);
+            }
+        }
+        @media(max-width:985px){
+            .event-header{
+                                
+            }
+            .event-header h2{
+                font-size: 25px;
+            }
+            .event-header p{
+                font-size: 10px;
+            }
+        }
+        @media(max-width:786px){
+            main{
+                top: 15vh;
+                width: 100vw;
+                background-color: white;
+            }
+            #one-top{
+                width: 90vw;
+                height: 70px;
+                display: block;
+                align-self: center;
+            }
+            .event-main-container{
+                gap: 0vw;
+                padding-top: 0;
+                padding: 0;
+                margin-bottom: 2px;
+                min-height: 100vh;
+                width: 100vw;   
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;   
+                border-bottom: 3px solid rgb(123, 120, 120);          
+            }
+            .event-img-container{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80vw;
+                height: 40vw;
+                border: 1px solid rgb(255, 180, 59);
+                margin-bottom: 5px;
+                margin-bottom: 50px;
+            }
+            .wrapper{
+                width: 100%;
+                display: flex;
+                animation: slide 16s infinite;
+            }
+            .wrapper img{
+                width: 100%;
+                object-fit: cover;
+                transition: scale 0.3s linear;
+            }
+            .event-main-container .event-content{
+                width: 95vw;
+                margin-top: 2px;
+    
+            }
+            .event-header{
+                height: 70px;
+                overflow: hidden;
+                padding-left: 20px;
+                background-color: rgb(255, 233, 196);
+                margin-bottom: 12px;
+                display: none;
+            }
+            .event-para{
+                max-height: 290px;
+                overflow: scroll;
+                
+            }
+           
+        }      
+            
+        
+    </style>
+</head>
+<body>
+    <header class="bg-warning" style="position: fixed;">
+        <div class="inner-bord">
+            <div id="s-name">
+             <h2>SRI VIVEKANANDA HIGH SCHOOL</h2>
+             <P>CHOLLANGIPETA</P>
+            </div>
+            <div id="menu" class="bg-light"><i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
+    <div class="img-container" style="position: fixed;">
+        <div id="image"> 
+    
+        </div>
+    </div>
+    <nav class="bg-warning" style="position: fixed;">
+        <ul type="none">
+            <li><a href="index.html">MENU</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">PLAYGROUND</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">CLASSROOMS</a></li>
+            <li><a href="staff.html">STAFF MEMBERS</a></li>
+            <li id="admission"><a href="admission.html" >ADMISSION</a></li>  
+
+        </ul>
+    </nav>
+    <main>
+        <div class="event-main-container">
+            <div class="event-header" id="one-top">
+                <h2 class="text-warning">EVENT NAME</h2>
+                <p>date - month - year</p>
+                <hr>
+            </div>
+        
+            <div class="event-img-container">
+            <div class="wrapper">
+            <img src="activity1.png" alt="">
+            <img src="school1.png" alt="">
+            <img src="school2.png" alt="">
+            <img src="school1.png" alt="">
+            </div>
+            </div>
+        <div class="event-content">
+            <div class="event-header" id="one-below">
+            <h2 class="text-warning">EVENT NAME</h2>
+            <p>date - month - year</p><hr>
+            </div>
+
+        <div class="event-para">
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+            Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                    Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+        </div>          
+        </div>
+    </div>
+
+    <div class="event-main-container">
+        <div class="event-content">
+            <div class="event-header" id="one-top">
+                <h2 class="text-warning">EVENT NAME</h2>
+                <p>date - month - year</p>
+                <hr>
+            </div>
+            <div class="event-header">
+                <h2 class="text-warning">EVENT NAME</h2>
+                <p>date - month - year</p>
+                <hr>
+            </div>
+            <div class="event-para">
+                <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+                <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+                <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                    Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            </div>       
+        </div>
+        <div class="event-img-container">
+            <div class="wrapper">
+            <img src="activity1.png" alt="">
+            <img src="school1.png" alt="">
+            <img src="school2.png" alt="">
+            <img src="school1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="event-main-container">
+        <div class="event-header" id="one-top">
+            <h2 class="text-warning">EVENT NAME</h2>
+            <p>date - month - year</p>
+            <hr>
+        </div>
+        
+        <div class="event-img-container">
+            <div class="wrapper">
+            <img src="activity1.png" alt="">
+            <img src="school1.png" alt="">
+            <img src="school2.png" alt="">
+            <img src="school1.png" alt="">
+            </div>
+        </div>
+        <div class="event-content">
+            <div class="event-header">
+            <h2 class="text-warning">EVENT NAME</h2>
+            <p>date - month - year</p>
+            <hr>
+            </div>
+            <div class="event-para">
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+            Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
+                    Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
+            </div>        
+        </div>
+    </div>
+
+    
+       
+
+
+       
+
+
+        <!--this is for footer-->
+
+        <div class="footer-container">
+            <div class="footer-sub-container" id="qlinks">
+                <h4 class="text-warning">QUICK LINKS</h4>
+                <hr>
+                 <a href="staff.html">STAFF INFORMATION</a>
+                 <a href="admission.html">ADMISSIONS</a>
+                 <a href="staff.html">FEE DETAILS</a>
+                 <a href="facilities.html">FACILITIES</a>   
+                 <hr>
+                 <h4 class="text-warning">SOCIAL MEDIA</h4>
+                 <hr>
+                 <div class="foot-soc">
+                    <a href="#"><i class="fa-brands fa-whatsapp text-success"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f text-info"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-danger"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-info"></i></a>
+                 </div>         
+            </div>
+            <div class="container-map">
+            <div id="form">
+                <h4 class="text-warning">CONTACT US</h4>
+                <hr>
+                <form action="">
+                    <input type="text" placeholder="ENTER YOUR NAME" class="form-control">
+                    <input type="email" placeholder="ENTER YOUR EMAIL"  class="form-control">
+                    <textarea name="hi" id="" placeholder="ENTER UR MESSAGE" rows="5"  class="form-control"></textarea>
+                    <button class="btn btn-warning"  class="form-control">SUBMIT</button>
+                </form> 
+            </div>
+            
+            <div id="map">
+                <h4 class="text-warning">OUR LOCATION</h4>
+                 <hr>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.198372470956!2d82.22873601073503!3d16.866078717546692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38274952816abb%3A0x45825d4a2c97e7c2!2sSri%20Vivekananda%20high%20school!5e0!3m2!1sen!2sin!4v1723186636975!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+           </div>
+        </div>
+    </main>
+    <script src="one.js"></script>
+</body>
+</html>
