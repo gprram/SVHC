@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI VIVEKANANDA HIGH SCHOOL</title>
+    <link rel="icon" href="images/school1.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        main{
+            position: relative;
+            top: 22vh;
+            background-color: white;
+        }
+        .container1,.container2{
+            width: 45vw;
+            padding: 2px 20px;
+            min-height: 100vh;
+            margin-bottom: 10vh;
+           
+        }
+        .main-cont{
+            display: flex;
+            justify-content: space-around;
+            padding-top:20px;
+           
+        }
+        .classroom-img-container{
+            width: 100%;
+        }
+        .class-wrapper{
+            width: 100%;
+            display: flex;
+            overflow: hidden;
+            
+        }
+        .class-wrapper img{
+            width: 100%;
+            object-fit: cover;
+            transition: all 0.5s;
+            animation: slide 15s ease-in-out infinite;
+            border-radius: 3px;
+            
+        }
+        .main-cont p{
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .main-cont h4{
+            padding: 10px 5px;
+            border: 1px solid orange;
+            border-radius: 3px;
+        }
+        @keyframes slide{
+            0%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(0);
+            }
+            30%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-100%);
+            }
+            55%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform:translateX(-200%)
+            }
+            80%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-300%);
+            }
+        }
+        @media(max-width:793px){
+            .main-cont p{
+                font-size: 17px;
+            }
+            
+        }
+        @media(max-width:548px){
+           .main-cont p{
+                font-size: 14px;
+            }
+            
+        }
+        @media(max-width:422px){
+            main{
+                top: 13vh;
+            }
+            .main-cont{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                padding-top:20px;
+            }
+            .container1,.container2{
+                width: 100vw;
+                min-height: 100vh;
+                padding: 4px 20px;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="bg-warning" style="position: fixed;">
+        <div class="inner-bord">
+            <div id="s-name">
+             <h2>SRI VIVEKANANDA HIGH SCHOOL</h2>
+             <P>CHOLLANGIPETA</P>
+            </div>
+            <div id="menu" class="bg-light"><i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
+    <div class="img-container" style="position: fixed;">
+        <div id="image"> 
+    
+        </div>
+    </div>
+    <nav class="bg-warning" style="position: fixed;">
+        <ul type="none">
+            <li><a href="index.html">MENU</a></li>
+            <li><a href="index.html#sec3">ABOUT US</a></li>
+            <li><a href="playground.html#playground">PLAYGROUND</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="playground.html">CLASSROOMS</a></li>
+            <li><a href="staff.html">STAFF MEMBERS</a></li>
+            <li id="admission"><a href="admission.html" >ADMISSION</a></li>  
+
+        </ul>
+    </nav>
+    <main>
+        <div class="main-cont">
+        <div class="container1">
+        <h4 class="text-warning bg-dark w-100">CLASSROOMS</h4>
+        <div class="classroom-img-container">
+          <div class="class-wrapper">
+            <img src="class2.jpg" alt="" class="img-fluid">
+            <img src="class1.png" alt="" class="img-fluid">
+            <img src="class3.jpg" alt="" class="img-fluid">
+            <img src="class4.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+          <hr>
+          <hr>
+          <div class="classroom-content">
+            <p><i class="fa-solid fa-caret-right"></i> The classrooms are large and filled with natural light, making them a pleasant place to learn.
+            </p>
+            <p><i class="fa-solid fa-caret-right"></i> The rooms are well-ventilated and designed to keep students comfortable throughout the day.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Teachers create a friendly and supportive environment, encouraging students to ask questions and participate actively</p>
+            <p><i class="fa-solid fa-caret-right"></i> Each classroom features smart boards for interactive lessons.</p>
+            <p><i class="fa-solid fa-caret-right"></i> All classrooms are equipped with safety measures like fire extinguishers and emergency exits.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Specialized classrooms for science subjects with lab facilities.
+            </p>
+            <p><i class="fa-solid fa-caret-right"></i> Classrooms are maintained clean and hygienic at all times.
+
+            </p>
+
+          </div>
+        
+
+    </div>
+
+
+    <div class="container2" id="playground">
+        <h4 class="text-warning bg-dark w-100">PLAYGROUND</h4>
+        <div class="classroom-img-container">
+          <div class="class-wrapper">
+            <img src="sport1.jpg" alt="" class="img-fluid">
+            <img src="sport2.jpg" alt="" class="img-fluid">
+            <img src="sport3.jpg" alt="" class="img-fluid">
+            <img src="sport4.jpg" alt="" class="img-fluid">
+          </div>
+        </div>
+          <hr>
+          <hr>
+          <div class="classroom-content">
+            <p><i class="fa-solid fa-caret-right"></i> Our playground is large enough to accommodate various sports activities.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Parents are invited to watch and support sporting events.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Experienced coaches guide students in developing their skills in sports.</p>
+            <p><i class="fa-solid fa-caret-right"></i> We offer a range of sports including cricket, football, basketball, and volleyball.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Safety measures are in place to ensure a secure play area.</p>
+            <p><i class="fa-solid fa-caret-right"></i> Conducting Annual sports day and special sports events to showcase talents</p>
+            <p><i class="fa-solid fa-caret-right"></i> We host inter-school and intra-school sports competitions.</p>
+         
+
+          </div>
+       
+    </div>
+
+</div>
+
+
+
+        <!--this is for footer-->
+
+        <div class="footer-container">
+            <div class="footer-sub-container" id="qlinks">
+                <h4 class="text-warning">QUICK LINKS</h4>
+                <hr>
+                <a href="staff.html">STAFF INFORMATION</a>
+                <a href="admission.html">ADMISSIONS</a>
+                 <a href="playground.html#playground">PLAYGROUND info</a>
+                <a href="playground.html">CLASSES info</a>   
+                 <hr>
+                 <h4 class="text-warning">SOCIAL MEDIA</h4>
+                 <hr>
+                 <div class="foot-soc">
+                    <a href="#"><i class="fa-brands fa-whatsapp text-success"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f text-info"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-danger"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-info"></i></a>
+                 </div>         
+            </div>
+            <div class="container-map">
+            <div id="form">
+                <h4 class="text-warning">CONTACT US</h4>
+                <hr>
+                <form action="">
+                    <input type="text" placeholder="ENTER YOUR NAME" class="form-control">
+                    <input type="email" placeholder="ENTER YOUR EMAIL"  class="form-control">
+                    <textarea name="hi" id="" placeholder="ENTER UR MESSAGE" rows="5"  class="form-control"></textarea>
+                    <button class="btn btn-warning"  class="form-control">SUBMIT</button>
+                </form> 
+            </div>
+            
+            <div id="map">
+                <h4 class="text-warning">OUR LOCATION</h4>
+                 <hr>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.198372470956!2d82.22873601073503!3d16.866078717546692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38274952816abb%3A0x45825d4a2c97e7c2!2sSri%20Vivekananda%20high%20school!5e0!3m2!1sen!2sin!4v1723186636975!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+           </div>
+        </div>
+    </main>
+    <script src="one.js"></script>
+</body>
+</html>

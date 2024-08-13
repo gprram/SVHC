@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         main{
+            width: 100vw;
             position: relative;
             top: 20vh;
-            background-color: rgb(255, 255, 255);            
+            background-color: rgb(255, 255, 255);       
         }
         .event-main-container{
-            gap: 15vw;
+            gap: 40px;
             position: relative;
-            margin-left: 10px;
-            margin-right: 10px;
+            margin-left: 0px;
+            margin-right: 0px;
             margin-bottom: 10px;
             padding: 25px 40px;
             width: 100vw;
@@ -30,7 +31,7 @@
             border-bottom: 2px solid black;
         }
         .event-img-container{
-            width: 50vw;
+            width: 60vw;
             height: 25vw;
             overflow: hidden;
             border-radius: 3px;
@@ -44,7 +45,8 @@
             height: 27%;
             overflow: hidden;
             padding-left: 20px;
-            background-color: rgb(255, 233, 196);
+            background-color: rgb(46, 46, 42);
+            color: white;
             margin-bottom: 12px;
             display: block;
         }
@@ -58,6 +60,7 @@
         }
         .wrapper{
             width: 100%;
+            height: auto;
             display: flex;
             animation: slide 16s infinite;
         }
@@ -113,10 +116,13 @@
                 background-color: white;
             }
             #one-top{
-                width: 90vw;
+                width: 100%;
+                border: 2px solid;
                 height: 70px;
                 display: block;
-                align-self: center;
+                margin: 30px 2px;
+                padding-left: 10px;
+                
             }
             .event-main-container{
                 gap: 0vw;
@@ -124,21 +130,20 @@
                 padding: 0;
                 margin-bottom: 2px;
                 min-height: 100vh;
-                width: 100vw;   
+                width: 100vw;
+                overflow: hidden;   
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;   
-                border-bottom: 3px solid rgb(123, 120, 120);          
-            }
+               align-items: center;  
+             }
             .event-img-container{
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 width: 80vw;
                 height: 40vw;
-                border: 1px solid rgb(255, 180, 59);
-                margin-bottom: 5px;
-                margin-bottom: 50px;
+                border: 2px solid rgb(68, 65, 65);
+                margin-bottom: 30px;
             }
             .wrapper{
                 width: 100%;
@@ -151,21 +156,19 @@
                 transition: scale 0.3s linear;
             }
             .event-main-container .event-content{
-                width: 95vw;
-                margin-top: 2px;
-    
+                width: 95vw;   
             }
             .event-header{
-                height: 70px;
+                height: 0px;
                 overflow: hidden;
-                padding-left: 20px;
-                background-color: rgb(255, 233, 196);
-                margin-bottom: 12px;
+                padding-left: 0px;
+                margin-bottom: 0px;
                 display: none;
             }
             .event-para{
                 max-height: 290px;
                 overflow: scroll;
+                padding: 0;
                 
             }
            
@@ -194,10 +197,10 @@
     <nav class="bg-warning" style="position: fixed;">
         <ul type="none">
             <li><a href="index.html">MENU</a></li>
-            <li><a href="#">ABOUT US</a></li>
-            <li><a href="#">PLAYGROUND</a></li>
-            <li><a href="#">EVENTS</a></li>
-            <li><a href="#">CLASSROOMS</a></li>
+            <li><a href="index.html#sec3">ABOUT US</a></li>
+            <li><a href="playground.html#playground">PLAYGROUND</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="playground.html">CLASSROOMS</a></li>
             <li><a href="staff.html">STAFF MEMBERS</a></li>
             <li id="admission"><a href="admission.html" >ADMISSION</a></li>  
 
@@ -312,10 +315,10 @@
             <div class="footer-sub-container" id="qlinks">
                 <h4 class="text-warning">QUICK LINKS</h4>
                 <hr>
-                 <a href="staff.html">STAFF INFORMATION</a>
-                 <a href="admission.html">ADMISSIONS</a>
-                 <a href="staff.html">FEE DETAILS</a>
-                 <a href="facilities.html">FACILITIES</a>   
+                <a href="staff.html">STAFF INFORMATION</a>
+                <a href="admission.html">ADMISSIONS</a>
+                <a href="playground.html#playground">PLAYGROUND info</a>
+                <a href="playground.html">CLASSES info</a>  
                  <hr>
                  <h4 class="text-warning">SOCIAL MEDIA</h4>
                  <hr>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRI VIVEKANANDA HIGH SCHOOL</title>
+    <link rel="icon" href="images/school1.png">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        main{
+            position: relative;
+            top: 20vh;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        form{
+            padding: 5vh 2vw !important;
+            margin-bottom: 2vh;
+        }
+        input,textarea,.input-group-text{
+            margin-bottom: 15px;
+            border-radius: 2px !important;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+        #declaration{
+            margin-bottom: 0;
+        }
+        @media(max-width:450px){
+            form,form input,form .input-group .input-group-text,form select{
+                font-size: 13px !important;
+            }
+            main{
+                top: 15vh;
+            }
+            form{
+                padding-top: 5px !important;
+            }
+        }
+        form button{
+            border-radius: 2px !important;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <header class="bg-warning" style="position: fixed;">
+        <div class="inner-bord">
+            <div id="s-name">
+             <h2>SRI VIVEKANANDA HIGH SCHOOL</h2>
+             <P>CHOLLANGIPETA</P>
+            </div>
+            <div id="menu" class="bg-light"><i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
+    <div class="img-container" style="position: fixed;">
+        <div id="image"> 
+    
+        </div>
+    </div>
+    <nav class="bg-warning" style="position: fixed;">
+        <ul type="none">
+            <li><a href="index.html">MENU</a></li>
+            <li><a href="index.html#sec3">ABOUT US</a></li>
+            <li><a href="playground.html#playground">PLAYGROUND</a></li>
+            <li><a href="events.html">EVENTS</a></li>
+            <li><a href="playground.html">CLASSROOMS</a></li>
+            <li><a href="staff.html">STAFF MEMBERS</a></li>
+            <li id="admission"><a href="admission.html" >ADMISSION</a></li>  
+
+        </ul>
+    </nav>
+    <main>
+        <form action="" class="container">
+            <legend class="text-warning">Students Information</legend>
+            <hr class="text-dark">
+            <label>Full Name <span class="text-danger form-label">*</span></label>
+            <input type="text" class="form-control" placeholder="Enter full name" required>
+
+            <label>DOB <span class="text-danger form-label">*</span></label>
+            <input type="date" class="form-control" placeholder="DOB" required>
+            <label class="form-label">Gender</label>
+            <select name="gender" id="gender" class="form-select">
+                <option value="male">MALE</option>
+                <option value="female">FEMALE</option>
+                <option value="others">OTHERS</option>
+            </select>
+            <br><br>
+            <h5>His/Her Previous School details</h5>
+            <hr class="text-dark"><br>
+
+            <label for="" class="form-label">Name Of Previous School</label>
+            <input type="text" class="form-control">
+            <label for="" class="form-label">Percentage in Previous School</label>
+            <div class="input-group">
+            <input type="number" class="form-control">
+            <label class="input-group-text">%</label>
+            </div>
+            <br>
+
+
+            <legend class="text-warning">Parent/Guardian Information</legend>
+            <hr class="text-dark">
+            <label for="" class="form-label">Father/Guardian Name <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" required>
+
+            <label for="" class="form-label">Phone number 1</label>
+            <div class="input-group">
+                <label for="" class="input-group-text">+91</label>
+                <input type="tel" class="form-control" required>
+            </div>
+            <label for="" class="form-label">Phone number 2 <span class="text-danger">(Alternative)</span></label>
+            <div class="input-group">
+                <label for="" class="input-group-text">+91</label>
+                <input type="tel" class="form-control">
+            </div>
+
+            <label for="" class="form-label">Email</label>
+            <input type="email" class="form-control">
+
+            <legend class="text-warning">Address</legend>
+            <hr class="text-dark">
+            <label for="">Permanent Address</label>
+            <textarea name="" id="" class="form-control" rows="4" required></textarea>
+
+            <label for="">Current Address <span class="text-danger">(if applicable)</span> </label>
+            <textarea name="" id="" class="form-control" rows="4"></textarea>
+
+            <legend class="text-warning">Admission Details</legend>
+            <hr class="text-dark">
+            <label>Class Applying For</label>
+            <div class="input-group">
+                <input type="number" class="form-control" min="1" max="10">
+                <label for="" class="input-group-text">th Standard</label>
+            </div>
+
+            <input type="checkbox" required id="declaration"><p>I here by declare that the information provided by me is true and accurate .</p>
+            <button type="submit" class="btn btn-info">Submit</button>
+
+
+        </form>
+
+
+
+       
+
+
+        <!--this is for footer-->
+
+        <div class="footer-container">
+            <div class="footer-sub-container" id="qlinks">
+                <h4 class="text-warning">QUICK LINKS</h4>
+                <hr>
+                <a href="staff.html">STAFF INFORMATION</a>
+                <a href="admission.html">ADMISSIONS</a>
+                <a href="playground.html#playground">PLAYGROUND info</a>
+                <a href="playground.html">CLASSES info</a>   
+                 <hr>
+                 <h4 class="text-warning">SOCIAL MEDIA</h4>
+                 <hr>
+                 <div class="foot-soc">
+                    <a href="#"><i class="fa-brands fa-whatsapp text-success"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f text-info"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram text-danger"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter text-info"></i></a>
+                 </div>         
+            </div>
+            <div class="container-map">
+            <div id="form">
+                <h4 class="text-warning">CONTACT US</h4>
+                <hr>
+                <form action="">
+                    <input type="text" placeholder="ENTER YOUR NAME" class="form-control">
+                    <input type="email" placeholder="ENTER YOUR EMAIL"  class="form-control">
+                    <textarea name="hi" id="" placeholder="ENTER UR MESSAGE" rows="5"  class="form-control"></textarea>
+                    <button class="btn btn-warning"  class="form-control">SUBMIT</button>
+                </form> 
+            </div>
+            
+            <div id="map">
+                <h4 class="text-warning">OUR LOCATION</h4>
+                 <hr>
+                <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.198372470956!2d82.22873601073503!3d16.866078717546692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a38274952816abb%3A0x45825d4a2c97e7c2!2sSri%20Vivekananda%20high%20school!5e0!3m2!1sen!2sin!4v1723186636975!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+           </div>
+        </div>
+    </main>
+    <script src="one.js"></script>
+</body>
+</html>
