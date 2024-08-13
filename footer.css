@@ -79,9 +79,10 @@ background-color: black;
 }
 @media(max-width:750px){
 #map{
-    display: none;
+    
 }
 #form{
+    display: none;
     width: 80%;
     margin-right: 0;
 }
