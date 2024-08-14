@@ -81,13 +81,13 @@ menu{
     .img-container3 .text-cont h1{
         font-size: 17px;
         letter-spacing: 0;
-        padding-top: 4px;
+        padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h5{
         font-size: 8px;
         letter-spacing: 0;
-        padding-top: 2px;
+        padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont h6{
@@ -97,9 +97,9 @@ menu{
         margin: 0;
     }
     .img-container3 .text-cont h4{
-        font-size: 10px;
+        font-size:10px;
         letter-spacing: 0;
-        padding-top: 2px;
+        padding-top: 0;
         margin: 0;
     }
     .img-container3 .text-cont .btn{
@@ -116,8 +116,8 @@ menu{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 1vh;
-        backdrop-filter: blur(3px);
+        padding: 5vh;
+        backdrop-filter: blur(1px);
        box-shadow: inset 5px 5px 300px black; 
     }
 
@@ -221,7 +221,7 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:white;
+    background-color: white;
 }
 
 #sec3 h3{
@@ -248,7 +248,9 @@ main{
 
 }
 .sec3-sub-container1 p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    font-size: 1.5vw;
+   color: black !important;
    margin:0;
 }
 .sec3-sub-container1 p i{
@@ -273,24 +275,31 @@ main{
 
 #sec3 .btn{
     margin-top: 7vh;
-    border-radius: 0;
-    width: 30vw;
-    height: 35px;
-  
+    width: 30%;
+    height: 45px;
     margin-bottom: 7vh;
+    border-radius: 5px;
+    box-shadow: 2px 2px 8px black;
     
 }
 #sec3 .btn p{
     color: white;
     font-size: 16px;
 }
+#sec3 .btn.btn-danger:hover{
+    box-shadow: inset 2px 2px 400px rgb(255, 0, 0),5px 5px 5px rgb(0, 0, 0) !important;
+}
 #sec3 .btn:hover{
-    box-shadow: inset 2px 2px 400px rgba(22, 190, 246, 1),2px 2px 40px rgba(24, 224, 250, 1) !important;
-    color: white;
+    box-shadow: inset 5px 5px 400px rgb(0, 157, 255),5px 5px 5px rgb(0, 0, 0) !important;
+}
+#sec3 .btn-container-3{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
 }
 @media(max-width:703px){
     #sec3 .btn p{
-        font-size: 12px;
+        font-size: 14px;
     }
     .sec3-container1{
         flex-direction: column;
@@ -308,16 +317,32 @@ main{
         width: 80%;
         margin-top: 35px;
     }
+    #sec3 .btn{
+        width: 40%;
+    }
 }
 @media(max-width:399px){
     #sec3 .btn p{
-        font-size: 9px;
+        font-size: 11px;
+    }
+    #sec3 .btn-container-3{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sec3 .btn{
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        width: 50%;
+        height: 30px;
     }
     
 }
 
 #sec2{
-    background:white;
+    background-color: white;
+    
 }
 .sub-princ{
     min-height: 50vh;

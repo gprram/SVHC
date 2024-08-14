@@ -79,7 +79,7 @@ background-color: black;
 }
 @media(max-width:750px){
 #map{
-    width:100%;
+    width:60%;
     
 }
 #form{
