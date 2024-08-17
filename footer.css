@@ -88,6 +88,7 @@ background-color: black;
 #map iframe{
     width:50vw;
     height:100%;
+}
 #form{
     display: none;
     width: 80%;
