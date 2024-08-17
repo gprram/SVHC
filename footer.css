@@ -83,8 +83,8 @@ background-color: black;
     height:100%
     
 }
-    #map .map-container{
-    height:30vh
+#map .map-container{
+    height:30vh;
     }
 #map iframe{
     width:40vw;
