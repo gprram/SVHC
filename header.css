@@ -93,15 +93,6 @@ nav ul li:hover{
     border-radius: 5px;
     background-color: rgb(249, 156, 15);
 }
-nav ul #admission{
-    border: 1px solid white;
-    border-radius: 40px;
-}
-nav ul #admission:hover{
-    background-color: greenyellow;
-    color: black !important;
-
-}
 nav ul li a{
     padding-left: 15px;
     text-decoration: none;

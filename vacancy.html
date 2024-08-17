@@ -87,8 +87,8 @@
         </ul>
     </nav>
     <main>
-        <form action="" class="container" id="form3">
-            <legend class="text-warning">Students Information</legend>
+        <form class="container" id="form2">
+            <legend class="text-warning">Personal Information</legend>
             <hr class="text-dark">
             <label>Full Name <span class="text-danger form-label">*</span></label>
             <input type="text" class="form-control" placeholder="Enter full name" id="name" required>
@@ -96,43 +96,48 @@
             <label>DOB <span class="text-danger form-label">*</span></label>
             <input type="date" class="form-control" placeholder="DOB" id="dob" required>
             <label class="form-label">Gender</label>
-            <select name="gender" id="gender" class="form-select">
+            <select name="gender" id="gender" class="form-select" required>
                 <option value="male">MALE</option>
                 <option value="female">FEMALE</option>
                 <option value="others">OTHERS</option>
             </select>
             <br><br>
-            <h5>His/Her Previous School details</h5>
+            <h5>WORK EXPERIENCE <span class="text-danger"> (not mandatory)</span></h5>
             <hr class="text-dark"><br>
 
             <label for="" class="form-label">Name Of Previous School</label>
-            <input type="text" id="p-school" class="form-control">
-            <label for="" class="form-label">Percentage in Previous School</label>
-            <div class="input-group">
-            <input type="number" class="form-control" id="p-school-perc">
-            <label class="input-group-text">%</label>
+            <input type="text" class="form-control" id="p-school-name">
+            <label for="" class="form-label">Name Of Subject You Teached</label>
+            <input type="text" class="form-control" id="p-school-sub">
+            <label for="" class="form-label">Year of Experience</label>
+            <div class="input-group" >
+            <input type="number" class="form-control" id="exp">
+            <label for="" class="form-label">
+            <select name="" id="exp-my" class="form-control">
+                <option value="months">months</option>
+                <option value="years">years</option>
+            </select>
+            </label>          
             </div>
             <br>
 
 
-            <legend class="text-warning">Parent/Guardian Information</legend>
+            <legend class="text-warning">Contact Information</legend>
             <hr class="text-dark">
-            <label for="" class="form-label">Father/Guardian Name <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" id="father-name" required>
 
             <label for="" class="form-label">Phone number 1</label>
             <div class="input-group">
                 <label for="" class="input-group-text">+91</label>
-                <input type="tel" class="form-control" id="ph1" required>
+                <input type="tel" class="form-control" id="phone1" required>
             </div>
             <label for="" class="form-label">Phone number 2 <span class="text-danger">(Alternative)</span></label>
             <div class="input-group">
                 <label for="" class="input-group-text">+91</label>
-                <input type="tel" class="form-control" id="ph2">
+                <input type="tel" class="form-control" id="phone2" required>
             </div>
 
             <label for="" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" required>
 
             <legend class="text-warning">Address</legend>
             <hr class="text-dark">
@@ -142,16 +147,13 @@
             <label for="">Current Address <span class="text-danger">(if applicable)</span> </label>
             <textarea name="" id="c-address" class="form-control" rows="4"></textarea>
 
-            <legend class="text-warning">Admission Details</legend>
+            <legend class="text-warning">Resume</legend>
             <hr class="text-dark">
-            <label>Class Applying For</label>
-            <div class="input-group">
-                <input type="number" id="class" class="form-control" min="1" max="10" required>
-                <label for="" class="input-group-text">th Standard</label>
-            </div>
-
-            <input type="checkbox" required id="declaration"><p>I here by declare that the information provided by me is true and accurate .</p>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <label>Upload your resume</label>
+            <input type="file" class="form-control" id="resumeInput">
+            
+            <input type="checkbox" id="declaration"><p>I here by declare that the information provided by me is true and accurate .</p>
+            <button type="submit" class="btn btn-info" id="button">Submit</button>
 
 
         </form>
@@ -202,7 +204,9 @@
            </div>
         </div>
     </main>
+
     <script src="one.js"></script>
-    <script src="emailadmission.js"></script>
+    <script src="emailsend.js"></script>
+    
 </body>
 </html>
