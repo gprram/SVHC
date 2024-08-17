@@ -302,7 +302,7 @@ main{
         font-size: 14px;
     }
     .sec3-container1{
-        min-height: 100vh;
+        min-height: 50vh;
         flex-direction: column;
         align-items: center;  
           
