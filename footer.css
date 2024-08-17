@@ -49,6 +49,7 @@ filter: drop-shadow(5px 5px 5px white);
 #form{
 width: 20vw;
 margin: 10px;
+display: none;
 }
 #form input,#form .btn,#form textarea{
 margin: 2px;
@@ -79,20 +80,14 @@ background-color: black;
 }
 @media(max-width:750px){
 #map{
-    width:40vw;
-    height:30vh;    
+    width:45vw;   
 }
-#map .map-container{
-    height:30vh;
+#map .map-container iframe{
+    height: 20vh;
 }
-#form{
-    display: none;
-    width: 80%;
-    margin-right: 0;
-}
-#form input,#form textarea,#form .btn{
-    font-size: 10px !important;
-}
+
+
+
 #qlinks a{
     font-size: 10px;
     padding-top: 2px;
