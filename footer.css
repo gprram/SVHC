@@ -80,14 +80,14 @@ background-color: black;
 }
 @media(max-width:750px){
 #map{
-    width:45vw;   
+    width:20vw;   
 }
 #map .map-container iframe{
     height: 20vh;
 }
-#form{
-        display:none;
-}
+
+
+
 #qlinks a{
     font-size: 10px;
     padding-top: 2px;

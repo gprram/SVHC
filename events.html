@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SRI VIVEKANANDA HIGH SCHOOL</title>
-    <link rel="icon" href="images/school1.png">
+    <link rel="icon" href="school1.png">
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="footer.css">
@@ -16,10 +16,13 @@
             box-sizing: border-box;
         }
         main{
-            width: 100vw;
+            width: 100%;
             position: relative;
             top: 15vh;
             background-color: rgb(255, 255, 255);       
+        }
+        body{
+            border: 1px solid red;
         }
         .event-main-container{
             gap: 40px;            
@@ -106,10 +109,6 @@
             }
         }
         @media(max-width:985px){
-            .event-header{
-
-                                
-            }
             .event-header h2{
                 font-size: 25px;
             }
@@ -120,7 +119,7 @@
         @media(max-width:789px){
             main{
                 top: 15vh;
-                width: 100vw;
+                
                 background-color: white;
               }
             #one-top{
@@ -221,7 +220,8 @@
             <li><a href="events.html">EVENTS</a></li>
             <li><a href="playground.html">FACILITIES</a></li>
             <li><a href="staff.html">STAFF MEMBERS</a></li>
-            <li id="admission"><a href="admission.html" >ADMISSION</a></li>  
+            <li><a href="admission.html" >ADMISSION</a></li> 
+            <li><a href="vacancy.html" >VACANCY</a></li>  
 
         </ul>
     </nav>
@@ -349,18 +349,7 @@
                     <a href="#"><i class="fa-brands fa-twitter text-info"></i></a>
                  </div>         
             </div>
-            <div class="container-map">
-            <div id="form">
-                <h4 class="text-warning">CONTACT US</h4>
-                <hr>
-                <form action="">
-                    <input type="text" placeholder="ENTER YOUR NAME" class="form-control">
-                    <input type="email" placeholder="ENTER YOUR EMAIL"  class="form-control">
-                    <textarea name="hi" id="" placeholder="ENTER UR MESSAGE" rows="5"  class="form-control"></textarea>
-                    <button class="btn btn-warning"  class="form-control">SUBMIT</button>
-                </form> 
-            </div>
-            
+            <div class="container-map">            
             <div id="map">
                 <h4 class="text-warning">OUR LOCATION</h4>
                  <hr>
