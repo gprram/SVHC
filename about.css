@@ -301,16 +301,14 @@ main{
     #sec3 .btn p{
         font-size: 14px;
     }
-    .sec3-container1{
-        min-height: 100vh;
+    #sec3 .sec3-container1{
+        min-height: 135vh;
         flex-direction: column;
         align-items: center;  
-          
-    
     }
-    .sec3-sub-container1{
-        height: auto;
-        overflow: hidden;
+    #sec3 .sec3-sub-container1{
+        height: 110vh;
+        overflow: scroll;
         width: 80%;
 
        
@@ -321,7 +319,7 @@ main{
         font-size: 17px;
     }
     .sec3-sub-container2{
-        height: auto;
+        height: 35vh;
         padding: auto;
         width: 80%;
          
