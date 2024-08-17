@@ -80,10 +80,14 @@ background-color: black;
 @media(max-width:750px){
 #map{
     width:40vw;
+    height:100%
     
 }
+    #map .map-container{
+    height:30vh
+    }
 #map iframe{
-    width:100%;
+    width:40vw;
     height:100%
 #form{
     display: none;
