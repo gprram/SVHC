@@ -1,8 +1,8 @@
 gsap.from("#qlinks",{
     opacity:0,
     x:-200,
-    duration:2,
-    stagger:1,
+    duration:1,
+    stagger:0.8,
     scrollTrigger:{
         trigger:".footer-container",
         scroller:'body',
@@ -12,8 +12,8 @@ gsap.from("#qlinks",{
 gsap.from(".container-map",{
     opacity:0,
     x:200,
-    duration:2,
-    stagger:1,
+    duration:1,
+    stagger:0.8,
     scrollTrigger:{
         trigger:".footer-container",
         scroller:'body',
