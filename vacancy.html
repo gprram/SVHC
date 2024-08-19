@@ -12,7 +12,9 @@
     <style>
         main{
             position: relative;
-            top: 20vh;
+            top: 15vh;
+            width:100vw;
+            overflow-x: hidden;
             background-color: rgb(255, 255, 255);
             
         }
@@ -72,7 +74,7 @@
     <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
     <div class="img-container" style="position: fixed;">
         <div id="image"> 
-    
+            <img src="logo.jpg" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid rgb(253, 180, 86)">
         </div>
     </div>
     <nav class="bg-warning" style="position: fixed;">
@@ -87,7 +89,9 @@
         </ul>
     </nav>
     <main>
+        <h1 class="text-center text-light bg-dark p-1 m-1" id="heady">JOB APPLICATION</h1>
         <form class="container" id="form2">
+        <div id="PSINFO">
             <legend class="text-warning">Personal Information</legend>
             <hr class="text-dark">
             <label>Full Name <span class="text-danger form-label">*</span></label>
@@ -101,10 +105,11 @@
                 <option value="female">FEMALE</option>
                 <option value="others">OTHERS</option>
             </select>
+        </div>
             <br><br>
             <h5>WORK EXPERIENCE <span class="text-danger"> (not mandatory)</span></h5>
             <hr class="text-dark"><br>
-
+        <div id="PGINFO">
             <label for="" class="form-label">Name Of Previous School</label>
             <input type="text" class="form-control" id="p-school-name">
             <label for="" class="form-label">Name Of Subject You Teached</label>
@@ -117,6 +122,7 @@
                 <option value="months">months</option>
                 <option value="years">years</option>
             </select>
+        </div>
             </label>          
             </div>
             <br>
@@ -124,7 +130,7 @@
 
             <legend class="text-warning">Contact Information</legend>
             <hr class="text-dark">
-
+        <div id="CINFO">
             <label for="" class="form-label">Phone number 1</label>
             <div class="input-group">
                 <label for="" class="input-group-text">+91</label>
@@ -138,7 +144,8 @@
 
             <label for="" class="form-label">Email</label>
             <input type="email" class="form-control" id="email" required>
-
+        </div>
+        <div id="ADINFO">
             <legend class="text-warning">Address</legend>
             <hr class="text-dark">
             <label for="">Permanent Address</label>
@@ -151,7 +158,7 @@
             <hr class="text-dark">
             <label>Upload your resume</label>
             <input type="file" class="form-control" id="resumeInput">
-            
+        </div>   
             <input type="checkbox" id="declaration"><p>I here by declare that the information provided by me is true and accurate .</p>
             <button type="submit" class="btn btn-info" id="button">Submit</button>
 
@@ -195,6 +202,11 @@
     </main>
 
     <script src="one.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsapheader.js"></script>
+    <script src="gsapvacancy.js"></script>
+    <script src="gsapfooter.js"></script>
     <script src="emailsend.js"></script>
     
 </body>

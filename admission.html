@@ -12,7 +12,9 @@
     <style>
         main{
             position: relative;
-            top: 20vh;
+            width:100vw;
+            overflow-x: hidden;
+            top: 15vh;
             background-color: rgb(255, 255, 255);
             
         }
@@ -72,6 +74,7 @@
     <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
     <div class="img-container" style="position: fixed;">
         <div id="image"> 
+            <img src="logo.jpg" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid rgb(253, 180, 86)">
     
         </div>
     </div>
@@ -88,9 +91,11 @@
         </ul>
     </nav>
     <main>
+        <h1 class="text-center text-light bg-dark p-1 m-1" id="heady">ADMISSION FORM</h1>
         <form action="" class="container" id="form3">
             <legend class="text-warning">Students Information</legend>
             <hr class="text-dark">
+        <div id="PSINFO">
             <label>Full Name <span class="text-danger form-label">*</span></label>
             <input type="text" class="form-control" placeholder="Enter full name" id="name" required>
 
@@ -114,10 +119,12 @@
             <label class="input-group-text">%</label>
             </div>
             <br>
+        </div>
 
 
             <legend class="text-warning">Parent/Guardian Information</legend>
             <hr class="text-dark">
+        <div id="PGINFO">
             <label for="" class="form-label">Father/Guardian Name <span class="text-danger">*</span></label>
             <input type="text" class="form-control" id="father-name" required>
 
@@ -134,7 +141,8 @@
 
             <label for="" class="form-label">Email</label>
             <input type="email" class="form-control" id="email">
-
+        </div>
+         <div id="ADINFO">
             <legend class="text-warning">Address</legend>
             <hr class="text-dark">
             <label for="">Permanent Address</label>
@@ -150,9 +158,9 @@
                 <input type="number" id="class" class="form-control" min="1" max="10" required>
                 <label for="" class="input-group-text">th Standard</label>
             </div>
-
+        </div>
             <input type="checkbox" required id="declaration"><p>I here by declare that the information provided by me is true and accurate .</p>
-            <button type="submit" class="btn btn-info">Submit</button>
+            <button type="submit" class="btn btn-info" id="bt">Submit</button>
 
 
         </form>
@@ -194,6 +202,12 @@
         </div>
     </main>
     <script src="one.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsapheader.js"></script>
+    <script src="gsapadmission.js"></script>
+    <script src="gsapfooter.js"></script>
     <script src="emailadmission.js"></script>
+
 </body>
 </html>
