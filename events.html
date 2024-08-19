@@ -16,11 +16,13 @@
             box-sizing: border-box;
         }
         main{
-            width: 100%;
+            width: 100vw;
+            overflow-x: hidden;
             position: relative;
             top: 15vh;
             background-color: rgb(255, 255, 255);       
         }
+       
         .event-main-container{
             gap: 40px;            
             margin-left: 0px;
@@ -34,15 +36,15 @@
             margin-bottom: 0vh;
         }
         .event-img-container{
-            margin-top: 5px;
-            width: 60vw;
+            margin-top: 25px;
+            width: 45vw;
             height: 25vw;
             overflow: hidden;
             border-radius: 3px;
             box-shadow: 10px 25px 30px rgba(89, 89, 92, 0.3);
         }
         .event-main-container .event-content{
-            width: 50vw;
+            width: 40vw;
 
         }
         .event-header{
@@ -127,7 +129,6 @@
                 margin-top: -10px;
                 margin-bottom:20px;
                 padding-left: 10px;
-                border: 2px solid red;
                 
             }
             .event-main-container{
@@ -207,7 +208,7 @@
     <marquee behavior="" direction="" style="position: fixed;">+939188555555    @fnaja@gmail.com</marquee>
     <div class="img-container" style="position: fixed;">
         <div id="image"> 
-    
+            <img src="logo.jpg" alt="" style="width:100%;height:100%;border-radius:50%;object-fit:cover;border:5px solid rgb(253, 180, 86)">
         </div>
     </div>
     <nav class="bg-warning" style="position: fixed;">
@@ -223,31 +224,24 @@
         </ul>
     </nav>
     <main>
-        <h1 class="text-warning text-center">EVENTS</h1>
-        <hr>
+        <h1 class="text-light bg-dark p-2 text-center" id="heady">EVENTS</h1>
         <div class="head-container">
         <div class="event-main-container">
-            <div class="event-header" id="one-top">
-                <h2 class="text-warning">EVENT NAME</h2>
-                <p>date - month - year</p>
-                <hr>
+            <div class="event-img-container" id="imgc1">
+            <div class="wrapper"  >
+                <img src="activity1.png" alt="">
+                <img src="school1.png" alt="">
+                <img src="school2.png" alt="">
+                <img src="school1.png" alt="">
             </div>
-        
-            <div class="event-img-container">
-            <div class="wrapper">
-            <img src="activity1.png" alt="">
-            <img src="school1.png" alt="">
-            <img src="school2.png" alt="">
-            <img src="school1.png" alt="">
-            </div>
-            </div>
-        <div class="event-content">
+           </div>
+        <div class="event-content" id="contc1">
             <div class="event-header" id="one-below">
              <h2 class="text-warning">EVENT NAME</h2>
              <p>date - month - year</p><hr>
             </div>
 
-         <div class="event-para">
+          <div class="event-para">
             <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
             Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
             <p>1.IN THIS EVENT Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur perspiciatis blanditiis corrupti soluta assumenda dolor impedit, obcaecati nemo! Non enim suscipit hic animi libero ipsa vel dolor, veritatis a sit.
@@ -258,12 +252,7 @@
         </div>
     </div>
     <div class="event-main-container">
-        <div class="event-content">
-            <div class="event-header" id="one-top">
-                <h2 class="text-warning">EVENT NAME</h2>
-                <p>date - month - year</p>
-                <hr>
-            </div>
+        <div class="event-content"  id="contc2" >     
             <div class="event-header">
                 <h2 class="text-warning">EVENT NAME</h2>
                 <p>date - month - year</p>
@@ -278,7 +267,7 @@
                     Fuga atque quidem sint delectus impedit commodi libero perspiciatis error, reiciendis molestiae velit quis corporis sunt assumenda repellendus. Perspiciatis, iste recusandae! Incidunt dicta expedita, voluptatibus fugiat non numquam perspiciatis modi!</p>
             </div>       
         </div>
-        <div class="event-img-container">
+        <div class="event-img-container" id="imgc2">
             <div class="wrapper">
             <img src="activity1.png" alt="">
             <img src="school1.png" alt="">
@@ -287,13 +276,7 @@
             </div>
         </div>
     </div>
-    <div class="event-main-container">
-        <div class="event-header" id="one-top">
-            <h2 class="text-warning">EVENT NAME</h2>
-            <p>date - month - year</p>
-            <hr>
-        </div>
-        
+    <div class="event-main-container" id="imgc3">   
         <div class="event-img-container">
             <div class="wrapper">
             <img src="activity1.png" alt="">
@@ -302,7 +285,7 @@
             <img src="school1.png" alt="">
             </div>
         </div>
-        <div class="event-content">
+        <div class="event-content"  id="contc3" >
             <div class="event-header">
             <h2 class="text-warning">EVENT NAME</h2>
             <p>date - month - year</p>
@@ -358,5 +341,10 @@
         </div>
     </main>
     <script src="one.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="gsapheader.js"></script>
+    <script src="gsapevents.js"></script>
+    <script src="gsapfooter.js"></script>
 </body>
 </html>

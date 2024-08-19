@@ -1,0 +1,55 @@
+gsap.from("#heady",{
+    y:-200,
+    duration:1.2,
+    delay:0.8
+}) 
+gsap.from("#imgc1",{
+    opacity:0,
+    x:-380,
+    duration:1
+})
+gsap.from("#contc1",{
+    opacity:0,
+    x:380,
+    duration:1
+})
+gsap.from("#imgc2",{
+    opacity:0,
+    x:380,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#imgc2",
+        scroller:"body",
+        start:"top 70%"
+    }
+})
+gsap.from("#contc2",{
+    opacity:0,
+    x:-380,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#contc2",
+        scroller:"body",
+        start:"top 70%"
+    }
+})
+gsap.from("#imgc3",{
+    opacity:0,
+    x:-380,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#imgc3",
+        scroller:"body",
+        start:"top 70%"
+    }
+})
+gsap.from("#contc3",{
+    opacity:0,
+    x:380,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#contc3",
+        scroller:"body",
+        start:"top 70%"
+    }
+})
